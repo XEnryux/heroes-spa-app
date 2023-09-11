@@ -11,7 +11,7 @@ export const LoginPage = () => {
      
   const onLogin = ()=>{
 
-    login('David Jaramillo Mesa');
+    login('Registered User');
 
     const lastPath=localStorage.getItem('lastPath')||'/';
  

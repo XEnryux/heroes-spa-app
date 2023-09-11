@@ -8,9 +8,12 @@ import {
 import { HeroesRoutes } from '../Heroes/routes/HeroesRoutes';
 
 import { LoginPage } from '../auth'
-import { DcPage, MarvelPage,SearchPage,HeroePage} from '../Heroes'
+import { DcPage, MarvelPage,SearchPage,HeroePage,AllHeroes} from '../Heroes'
 import { PrivateRouter } from './PrivateRouter';
 import { PublicRouter } from './PublicRouter';
+
+
+AllHeroes
 
 
 
@@ -39,8 +42,13 @@ const router = createBrowserRouter([
           },
           {
             path: "/",
-            element: <Navigate to={"/marvel"}/>
+            element:<AllHeroes/>
+          },
+          {
+            path: "/*",
+            element: <Navigate to={"/"}/>
           }
+
 
       ]
     },
